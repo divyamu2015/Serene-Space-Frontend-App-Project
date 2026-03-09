@@ -538,21 +538,21 @@ _toolCard(
                     MaterialPageRoute(builder: (_) => MentalHealthWellnessApp(userId: userId!)),
                   ),
                 ),
-                _drawerTile(
-                  icon: Icons.help_outline_rounded,
-                  title: "Support Center",
-                  onTap: () {
-                    // Placeholder for support
-                  },
-                ),
-                     _drawerTile(
-                  icon: Icons.rate_review_rounded,
-                  title: "Feedback",
-                  onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => HosDoctorAppointmentsPages(userId: userId!)),
-                  ),
-                ),
+                // _drawerTile(
+                //   icon: Icons.help_outline_rounded,
+                //   title: "Support Center",
+                //   onTap: () {
+                //     // Placeholder for support
+                //   },
+                // ),
+                //      _drawerTile(
+                //   icon: Icons.rate_review_rounded,
+                //   title: "Feedback",
+                //   onTap: () => Navigator.push(
+                //     context,
+                //     MaterialPageRoute(builder: (_) => HosDoctorAppointmentsPages(userId: userId!)),
+                //   ),
+                // ),
               ],
             ),
           ),

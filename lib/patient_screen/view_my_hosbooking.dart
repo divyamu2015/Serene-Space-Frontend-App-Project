@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:serene_space_project/constant_uri.dart';
 import 'package:serene_space_project/patient_screen/feedback_form.dart';
+import 'package:serene_space_project/patient_screen/home_screen.dart';
 
 class HosDoctorAppointmentsPages extends StatefulWidget {
   final int userId;
@@ -123,7 +124,9 @@ Future<void> fetchClinBookings() async {
         elevation: 0,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return HomeScreen(userId: userId!);
+            },));
           },
           icon: const Icon(Icons.arrow_back),
         ),
