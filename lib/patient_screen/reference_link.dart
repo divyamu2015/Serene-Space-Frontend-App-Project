@@ -4,39 +4,51 @@ import 'package:serene_space_project/utils/app_theme.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PeriodsReferencesApp extends StatelessWidget {
-  final List<Map<String, String>> references = [
-    {
-      'title': 'Menstruation — Wikipedia',
-      'subtitle': 'General overview: cycle length, common features',
-      'url': 'https://en.wikipedia.org/wiki/Menstruation',
-    },
-    {
-      'title': 'Menstrual cycle — Wikipedia',
-      'subtitle': 'Phases, hormones, ovulation',
-      'url': 'https://en.wikipedia.org/wiki/Menstrual_cycle',
-    },
-    {
-      'title': 'Menstrual Cycle: Overview & Phases — Cleveland Clinic',
-      'subtitle': 'Clinical overview: duration, symptoms',
-      'url':
-          'https://my.clevelandclinic.org/health/articles/10132-menstrual-cycle',
-    },
-    {
-      'title': 'Menstruation (periods) — MedlinePlus',
-      'subtitle': 'Health-oriented basics and symptoms',
-      'url': 'https://medlineplus.gov/menstruation.html',
-    },
-    {
-      'title': 'Periods / Menstruation — Healthdirect',
-      'subtitle': 'What happens, typical duration, when to seek help',
-      'url': 'https://www.healthdirect.gov.au/menstruation',
-    },
-    {
-      'title': 'Physiology, Menstrual Cycle — NCBI / StatPearls',
-      'subtitle': 'Medical detail on hormones and coordination',
-      'url': 'https://www.ncbi.nlm.nih.gov/books/NBK500020/',
-    },
-  ];
+ final List<Map<String, String>> references = [
+  // ADHD
+  {
+    'title': 'ADHD — National Institute of Mental Health',
+    'subtitle': 'Symptoms, causes, and treatments of ADHD',
+    'url': 'https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd',
+  },
+  {
+    'title': 'ADHD — CDC',
+    'subtitle': 'Overview, diagnosis, and management of ADHD',
+    'url': 'https://www.cdc.gov/adhd/index.html',
+  },
+  {
+    'title': 'Attention-Deficit / Hyperactivity Disorder — MedlinePlus',
+    'subtitle': 'Medical overview and resources for ADHD',
+    'url': 'https://medlineplus.gov/attentiondeficithyperactivitydisorder.html',
+  },
+  {
+    'title': 'ADHD in Adults — Cleveland Clinic',
+    'subtitle': 'Symptoms and treatment options for adult ADHD',
+    'url': 'https://my.clevelandclinic.org/health/diseases/4784-adhd-in-adults',
+  },
+
+  // Depression
+  {
+    'title': 'Depression — National Institute of Mental Health',
+    'subtitle': 'Signs, symptoms, and treatment for depression',
+    'url': 'https://www.nimh.nih.gov/health/topics/depression',
+  },
+  {
+    'title': 'Depression — World Health Organization',
+    'subtitle': 'Global mental health overview of depression',
+    'url': 'https://www.who.int/news-room/fact-sheets/detail/depression',
+  },
+  {
+    'title': 'Depression — MedlinePlus',
+    'subtitle': 'Medical guide to symptoms and treatments',
+    'url': 'https://medlineplus.gov/depression.html',
+  },
+  {
+    'title': 'Depression — Cleveland Clinic',
+    'subtitle': 'Clinical overview and therapy options',
+    'url': 'https://my.clevelandclinic.org/health/diseases/9290-depression',
+  },
+];
 
   PeriodsReferencesApp({super.key,required this.userId});
   final int userId;
